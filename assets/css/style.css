@@ -1,0 +1,47 @@
+/*block du texte de présentation */
+#textPresentation{
+  display: inline-block;
+  align-items: flex-start;
+  padding-top: 6%;
+}
+
+/*block regroupant les coordonnées et le texte de présentation */
+#block_en_tete{
+  display: flex;
+  padding-top: 5px;
+  width: 100%;
+}
+
+/*coordonnées */
+#coordonnees{
+  display: inline-block;
+  align-items: flex-start;
+  height: 300px;
+}
+
+/* pas de soulignement sur les liens */
+.noLink{
+    text-decoration: none;
+}
+
+/*menu boutons : accueil... */
+.coord_menu{
+  float: right;
+}
+
+/* image fond en-tête*/
+.fond_header{
+  width: 100%;
+  height: 150px;
+}
+
+/*photo cv*/
+.avatar{
+  margin-left: 5%;
+  margin-bottom: 5%;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/photo_moi.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
