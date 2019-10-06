@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity= "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin= "anonymous" >
-    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity= "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin= "anonymous" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Formations CV</title>
   </head>
@@ -43,70 +42,105 @@
           </p>
         </div>
         <h1>Formations</h1>
-        <p>
-          <table>
-            <tr>
-              <td>2019 - 2020</td>
-              <td>Développeur web et Développeur web mobiles - Bts -<br>
+        <!-- block formation en accordeon -->
+        <div id="accordion">
+          <!-- 1er block -->
+          <div class="card">
+            <div class="card-header" id="volet1">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#contenu1" aria-expended="true" aria-controls="contenu1" title="Cliquez pour dérouler / enrouler">
+                  2019 - 2020 Développeur web et Développeur web mobiles<br>
+                  Bts en cours (805h)
+                </button>
+              </h5>
+            </div>
+            <div id="contenu1" class="collapse" aria-labelledby="titre1" data-parent="#accordion">
+              <div class="card-body">
                 html5, css3, bootstrap4, php7
-              </td>
-            </tr>
-            <tr>
-              <td><p></p></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1999 - 2000</td>
-              <td>Technicien supérieur en informatique de gestion - Bts -<br>
-                (concepteur développeur multimédia, services internet)<br>
+              </div>
+            </div>
+          </div>
+          <!-- 2eme block -->
+          <div class="card">
+            <div class="card-header" id="volet2">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#contenu2" aria-expended="false" aria-controls="contenu2" title="Cliquez pour dérouler / enrouler">
+                  1999 - 2000 Technicien supérieur en informatique de gestion - Bts obtenu -<br>
+                  (concepteur développeur multimédia, services internet)
+                </button>
+              </h5>
+            </div>
+            <div id="contenu2" class="collapse" aria-labelledby="titre2" data-parent="#accordion">
+              <div class="card-body">
                 - Développement et maintenance d'une application informatique<br>
                 - Accès aux données et objers multimédia<br>
                 - Architecture internet et constitution d'un site web<br>
                 (html, css, visualbasic, javascript, asp, acces, sql)
-              </td>
-            </tr>
-            <tr>
-              <td><p></p></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2008, 2009, 2010</td>
-              <td>Plusieurs formations courtes de vente<br>
+              </div>
+            </div>
+          </div>
+          <!-- 3eme block -->
+          <div class="card">
+            <div class="card-header" id="volet3">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#contenu3" aria-expended="false" aria-controls="contenu3" title="Cliquez pour dérouler / enrouler">
+                  2008, 2009, 2010  Plusieurs formations courtes de vente<br>
+                </button>
+              </h5>
+            </div>
+            <div id="contenu3" class="collapse" aria-labelledby="titre3" data-parent="#accordion">
+              <div class="card-body">
                 Présentations et techniques de vente par différentes sociétés<br>
                 (encarts publicitaires, photovoltaïque, cuisines)
-              </td>
-            </tr>
-            <tr>
-              <td><p></p></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1997</td>
-              <td>Technicien en secrétariat commercial - Bac -
-                <br>Etude des services ciient, commercial, achat
-              </td>
-            </tr>
-            <tr>
-              <td>2016</td>
-              <td>Caces 1 et 3</td>
-            </tr>
-            <tr>
-              <td><p></p></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1998</td>
-              <td>Cariste magasinier gestionnaire de stock<br>
-                - réglementation,gestion de stocks, technolgie des différents chariots élévateurs,<br>
-                sécurité
-              </td>
-            </tr>
-          </table>
-        </p>
+              </div>
+            </div>
+          </div>
+          <!-- 4eme block -->
+          <div class="card">
+            <div class="card-header" id="volet4">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#contenu4" aria-expended="false" aria-controls="contenu4" title="Cliquez pour dérouler / enrouler">
+                  1997 Technicien en secrétariat commercial - Bac -<br>
+                </button>
+              </h5>
+            </div>
+            <div id="contenu4" class="collapse" aria-labelledby="titre4" data-parent="#accordion">
+              <div class="card-body">
+                Etude des services ciient, commercial, achat
+              </div>
+            </div>
+          </div>
+          <!-- 5eme block -->
+          <div class="card">
+            <div class="card-header" id="volet5">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#contenu5" aria-expended="false" aria-controls="contenu5" title="Cliquez pour dérouler / enrouler">
+                  1998 Cariste magasinier gestionnaire de stock<br>
+                </button>
+              </h5>
+            </div>
+            <div id="contenu5" class="collapse" aria-labelledby="titre5" data-parent="#accordion">
+              <div class="card-body">
+                - réglementation,<br>
+                - gestion de stocks,<br>
+                - technolgie des différents chariots élévateurs,<br>
+                - sécurité
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fin block formation accordion -->
       </div>
     </div>
   </div>
-  <script src= "https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity= "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin= "anonymous" ></script>
-  <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin= "anonymous" ></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- initialisation des bulles d'aide -->
+  <script>
+    $(function(){
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 </html>
