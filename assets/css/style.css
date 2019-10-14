@@ -2,7 +2,9 @@
 #textPresentation{
   display: inline-block;
   align-items: flex-start;
+  width: 100%;
   padding-top: 6%;
+
 }
 
 /*block regroupant les coordonnées et le texte de présentation */
@@ -18,6 +20,10 @@
   align-items: flex-start;
   height: 300px;
 }
+
+ .margeCard{
+  padding-top: 10px;
+ }
 
 /* pas de soulignement sur les liens */
 .noLink{
@@ -44,4 +50,25 @@
   background-image: url(../img/photo_moi.png);
   background-size: 100px;
   background-repeat: no-repeat;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.colonne{
+  flex-wrap: wrap;
+  height:auto;
+  margin: 5px;
+}
+
+.media{
+  margin: 5px;
 }
