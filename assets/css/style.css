@@ -5,7 +5,6 @@
   align-items: flex-start;
   width: 100%;
   padding-top: 6%;
-
 }
 
 /*block regroupant les coordonnées et le texte de présentation */
@@ -41,7 +40,6 @@
 }
 
 .alignText{
-
   white-space: normal;
 	text-align: justify;
 }
@@ -98,5 +96,4 @@ img:hover {
 }
 .lineHeight{
   height: 16px;
-
 }
