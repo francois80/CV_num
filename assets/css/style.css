@@ -1,3 +1,4 @@
+
 /*block du texte de présentation */
 #textPresentation{
   display: inline-block;
@@ -10,6 +11,7 @@
 /*block regroupant les coordonnées et le texte de présentation */
 #block_en_tete{
   display: flex;
+  flex-wrap: wrap;
   padding-top: 5px;
   width: 100%;
 }
@@ -17,8 +19,31 @@
 /*coordonnées */
 #coordonnees{
   display: inline-block;
+  justify-content: flex-start;
   align-items: flex-start;
+  padding: 2px;
   height: 300px;
+}
+
+.bloc_Large
+{
+	width: 100%;
+	margin: auto;
+	background-color: white;
+	height:auto;
+	-webkit-box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	border: 1px solid #dfdede;
+  margin-top: 50px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.alignText{
+
+  white-space: normal;
+	text-align: justify;
 }
 
  .margeCard{
@@ -64,11 +89,14 @@ img:hover {
 }
 
 .colonne{
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   height:auto;
-  margin: 5px;
 }
 
 .media{
-  margin: 5px;
+  white-space: normal;
+}
+.lineHeight{
+  height: 16px;
+
 }
