@@ -10,8 +10,36 @@
   <body>
     <div class="container-fluid">
     <header>
-      <img src="assets/img/background.jpg" class="fond_header" alt="fond_header">
+      <h1>Développeur Web Junior</h1>
     </header>
+    <!-- bloc menu hamburger pour petit écran -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experiences.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competences.html">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="realisations.html">Réalisations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin bloc hamburger-->
     <!--block menu-->
     <div class="coord_menu">
       <input type="button" name="acueil" value="Accueil" onclick="window.location.href='index.html';">
@@ -23,21 +51,28 @@
     </div>
     <!-- block coordonnees et menu côte à côte-->
     <div id="block_en_tete">
+      <!--bloc coordonnées petit ecran -->
+      <div class="card card-littleScreen mb-3" style="max-width: 17rem;">
+        <div class="card-body">
+          <h4>François GLAVIEUX</h4>
+          <p>glavieux.francois@orange.fr</p>
+        </div>
+      </div>
       <!-- block coordonnées -->
       <div id="coordonnees" class="col-sm-4 col-md-3">
         <div class="avatar">
         </div>
-        <div>
-          <p>
-            François GLAVIEUX<br><br>
+        <div class="text-coord">
+          <h4>François GLAVIEUX</h4>
             Conty (Somme,80)
+          <p>
+            glavieux.francois@orange.fr
           </p>
-          glavieux.francois@orange.fr
         </div>
       </div>
       <div id="textPresentation" class="col-sm-8 col-md-9">
         <div>
-          <p>
+          <p class="filAriane">
             <a class="noLink" href="index.html">Accueil</a> > Formations
           </p>
         </div>
@@ -53,7 +88,7 @@
                 </button>
               </h5>
             </div>
-            <div id="contenu1" class="collapse" aria-labelledby="titre1" data-parent="#accordion">
+            <div id="contenu1" class="collapse" aria-labelledby="volet1" data-parent="#accordion">
               <div class="card-body">
                 html5, css3, bootstrap4, php7
               </div>
@@ -69,7 +104,7 @@
                 </button>
               </h5>
             </div>
-            <div id="contenu2" class="collapse" aria-labelledby="titre2" data-parent="#accordion">
+            <div id="contenu2" class="collapse" aria-labelledby="volet2" data-parent="#accordion">
               <div class="card-body">
                 - Développement et maintenance d'une application informatique<br>
                 - Accès aux données et objers multimédia<br>
@@ -87,7 +122,7 @@
                 </button>
               </h5>
             </div>
-            <div id="contenu3" class="collapse" aria-labelledby="titre3" data-parent="#accordion">
+            <div id="contenu3" class="collapse" aria-labelledby="volet3" data-parent="#accordion">
               <div class="card-body">
                 Présentations et techniques de vente par différentes sociétés<br>
                 (encarts publicitaires, photovoltaïque, cuisines)
@@ -103,7 +138,7 @@
                 </button>
               </h5>
             </div>
-            <div id="contenu4" class="collapse" aria-labelledby="titre4" data-parent="#accordion">
+            <div id="contenu4" class="collapse" aria-labelledby="volet4" data-parent="#accordion">
               <div class="card-body">
                 Etude des services ciient, commercial, achat
               </div>
@@ -118,7 +153,7 @@
                 </button>
               </h5>
             </div>
-            <div id="contenu5" class="collapse" aria-labelledby="titre5" data-parent="#accordion">
+            <div id="contenu5" class="collapse" aria-labelledby="volet5" data-parent="#accordion">
               <div class="card-body">
                 - réglementation,<br>
                 - gestion de stocks,<br>

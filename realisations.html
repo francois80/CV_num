@@ -11,8 +11,36 @@
   <body>
   <div class="container-fluid">
     <header>
-      <img src="assets/img/background.jpg" class="fond_header" alt="fond_header">
+      <h1>Développeur Web Junior</h1>
     </header>
+    <!-- bloc menu hamburger pour petit écran -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formations.html">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experiences.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competences.html">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Réalisations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin bloc hamburger-->
     <!--block menu-->
     <div class="coord_menu">
       <input type="button" name="acueil" value="Accueil" onclick="window.location.href='index.html';">
@@ -24,20 +52,27 @@
     </div>
     <!-- block coordonnees et menu côte à côte-->
     <div id="block_en_tete">
-      <!-- block coordonnées -->
-      <div id="coordonnees" class="col-3">
-        <div class="avatar">
-        </div>
-        <div>
-          <p>
-            François GLAVIEUX<br><br>
-            Conty (Somme,80)
-          </p>
-          glavieux.francois@orange.fr
+      <!--bloc coordonnées petit ecran -->
+      <div class="card card-littleScreen mb-3" style="max-width: 17rem;">
+        <div class="card-body">
+          <h4>François GLAVIEUX</h4>
+          <p>glavieux.francois@orange.fr</p>
         </div>
       </div>
-      <div id="textPresentation" class="col-9">
-        <p>
+      <!-- block coordonnées -->
+      <div id="coordonnees" class="col-sm-4 col-md-3">
+        <div class="avatar">
+        </div>
+        <div class="text-coord">
+          <h4>François GLAVIEUX</h4>
+            Conty (Somme,80)
+          <p>
+            glavieux.francois@orange.fr
+          </p>
+        </div>
+      </div>
+      <div id="textPresentation" class="col-sm-8 col-md-9">
+        <p class="filAriane">
           <a class="noLink" href="index.html">Accueil</a> >
           <a class="noLink" href="formations.html">Formations</a> >
           <a class="noLink" href="experiences.html">Expériences</a> >

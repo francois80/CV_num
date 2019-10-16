@@ -10,8 +10,36 @@
 <body>
   <div class="container-fluid">
     <header>
-      <img src="assets/img/background.jpg" class="fond_header" alt="fond_header">
+      <h1>Développeur Web Junior</h1>
     </header>
+    <!-- bloc menu hamburger pour petit écran -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formations.html">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competences.html">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="realisations.html">Réalisations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin bloc hamburger-->
     <!--block menu-->
     <div class="coord_menu">
       <input type="button" name="acueil" value="Accueil" onclick="window.location.href='index.html';">
@@ -24,20 +52,27 @@
     <!-- block coordonnees et menu côte à côte-->
     <div id="block_en_tete">
       <!-- block coordonnées -->
+      <!--bloc coordonnées petit ecran -->
+      <div class="card card-littleScreen mb-3" style="max-width: 17rem;">
+        <div class="card-body">
+          <h4>François GLAVIEUX</h4>
+          <p>glavieux.francois@orange.fr</p>
+        </div>
+      </div>
       <div id="coordonnees" class="col-sm-4 col-md-3">
         <div class="avatar">
         </div>
-        <div>
-          <p>
-            François GLAVIEUX<br><br>
+        <div class="text-coord">
+          <h4>François GLAVIEUX</h4>
             Conty (Somme,80)
+          <p>
+            glavieux.francois@orange.fr
           </p>
-          glavieux.francois@orange.fr
         </div>
       </div>
       <div id="textPresentation" class="col-sm-8 col-md-9">
         <div>
-          <p>
+          <p class="filAriane">
             <a class="noLink" href="index.html">Accueil</a> >
             <a class="noLink" href="formations.html">Formations</a> > Expériences
           </p>
@@ -45,9 +80,9 @@
         <h1>Expériences</h1>
         <div class="card-deck">
           <div class="margeCard col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <div class="card">
+            <div class="card deco-card">
               <div class="card-body">
-                <h4 class="card-title">2019 - 2020</h4>
+                <h4 class="card-title alert-info">2019 - 2020</h4>
                 <p class="card-text">Développeur web et Développeur web mobiles - Bts (en cours) <br>
                   html5, css3, border-primary
                 </p>
@@ -55,9 +90,9 @@
             </div>
           </div>
           <div class="margeCard col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <div class="card">
+            <div class="card deco-card">
               <div class="card-body">
-                <h4 class="card-title">2000 - 2006</h4>
+                <h4 class="card-title alert-info">2000 - 2006</h4>
                 <p class="card-text">Développeur multimédia<br>
                   Création de sites web<br>
                   Créations de cahier des charges<br>
@@ -69,9 +104,9 @@
             </div>
           </div>
           <div class="margeCard col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <div class="card">
+            <div class="card deco-card">
               <div class="card-body">
-                <h4 class="card-title">2008 2014</h4>
+                <h4 class="card-title alert-info">2008 - 2014</h4>
                 <p class="card-text">Agent commercial indépendant<br>
                   Vente d'encarts publicitaires<br>
                   Vente de panneaux photovoltaïques<br>
@@ -83,12 +118,13 @@
             </div>
           </div>
           <div class="margeCard col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <div class="card">
+            <div class="card deco-card">
               <div class="card-body">
-                <h4 class="card-title">2015 2018</h4>
+                <h4 class="card-title alert-info">2015 - 2018</h4>
                 <p class="card-text">Agent commercial indépendant<br>
                   Interimaire<br>
                   Préparateur de commandes<br>
+                  conducteur de ligne<br>
                   Cariste<br>
                   Manutentionnaire
                 </p>
@@ -96,24 +132,14 @@
             </div>
           </div>
           <div class="margeCard col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <div class="card">
+            <div class="card deco-card">
               <div class="card-body">
-                <h4 class="card-title">XXXX - XXXX</h4>
-                <p class="card-text">XXXX XXXX XX XX X <br>
-                  XXXXXXXXXXX<br>
-                  XXXXXXXXXXXXx<br>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="margeCard col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">XXXX - XXXX</h4>
-                <p class="card-text">XXXX XXXX XX XX X <br>
-                  BBBBBBBBBBBBB<br>
-                  BBBBBBBBBBBBB<br>
-                  BBBBBBBBBBBBBBBB
+                <h4 class="card-title alert-info">1994 - 1999</h4>
+                <p class="card-text">Ouvrier, Cariste <br>
+                  Intérimaire<br>
+                  Cariste<br>
+                  Conducteur de machine<br>
+                  Manutentionnaire
                 </p>
               </div>
             </div>

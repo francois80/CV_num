@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang=fr dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Compétences CV</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Compétences CV</title>
+</head>
+<body>
   <div class="container-fluid">
     <header>
-      <img src="assets/img/background.jpg" class="fond_header" alt="fond_header">
+      <h1>Développeur Web Junior</h1>
     </header>
+    <!-- bloc menu hamburger pour petit écran -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formations.html">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experiences.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="realisations.html">Réalisations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin bloc hamburger-->
     <!--block menu-->
     <div class="coord_menu">
       <input type="button" name="acueil" value="Accueil" onclick="window.location.href='index.html';">
@@ -24,142 +51,146 @@
     </div>
     <!-- block coordonnees et menu côte à côte-->
     <div id="block_en_tete">
+      <!--bloc coordonnées petit ecran -->
+      <div class="card card-littleScreen mb-3" style="max-width: 17rem;">
+        <div class="card-body">
+          <h4>François GLAVIEUX</h4>
+          <p>glavieux.francois@orange.fr</p>
+        </div>
+      </div>
       <!-- block coordonnées -->
-      <div id="coordonnees"  class="col-sm-4 col-md-3">
+      <div id="coordonnees" class="col-sm-4 col-md-3">
         <div class="avatar">
         </div>
-        <div>
-          <p>
-            François GLAVIEUX<br><br>
-            Conty (Somme,80)
-          </p>
+        <div class="text-coord">
+          <h4>François GLAVIEUX</h4>
+          Conty (Somme,80)
           <p>
             glavieux.francois@orange.fr
           </p>
         </div>
       </div>
       <div id="textPresentation" class="col-sm-8 col-md-9">
-        <p>
+        <p class="filAriane">
           <a class="noLink" href="index.html">Accueil</a> >
           <a class="noLink" href="formations.html">Formations</a> >
           <a class="noLink" href="experiences.html">Expériences</a> >
           Compétences
         </p>
         <h1>Compétences</h1>
-        <!-- Début Bloc large 1 -->
         <div class="bloc_Large">
-
-            <h3>Informatique :</h3>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Développement d'applications web
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 50%; max-width:80%">50%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Htm5
-              </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 50%; max-width:80%">50%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                    Css3
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 35%; max-width:80%">35%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Bootstrap
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 25%; max-width:80%">25%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  JQuery
-                </ul>
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 10%; max-width:80%">10%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Trello
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 50%; max-width:80%">50%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Terminal Ubuntu
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 50%; max-width:80%">50%</div>
-              </div>
-              <h3>Commercial - Vente</h3>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                    Démarchage / Prospection
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 70%; max-width:80%">70%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Suivi de clientèle
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 70%; max-width:80%">70%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Négociation
-                </ul>
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 50%; max-width:80%">50%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Service après-vente
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 80%; max-width:80%">80%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Gestion de stock
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 50%; max-width:80%">50%</div>
-              </div>
-              <h3>Industrie - Logistique - Agroalimentaire</h3>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                    Conducteur de ligne / de machine
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 70%; max-width:80%">70%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Conduite de chariots élévateurs (caces 1/3)
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 80%; max-width:80%">80%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Préparations de commandes
-                </ul>
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 80%; max-width:80%">80%</div>
-              </div>
-              <div class="progress colonne bg-light">
-                <div class="media col-md-3">
-                  Manutention
-                </div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 80%; max-width:80%">80%</div>
-              </div>
-
+          <h3>Informatique :</h3>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Développement d'applications web
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 35%">50%</div>
           </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Htm5
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 42%">60%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Css3
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 35%">50%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Bootstrap
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 28%">40%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              JQuery
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 7%">10%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Trello
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 45%">65%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Terminal Ubuntu
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 45%">65%</div>
+          </div>
+        </div>
+        <div style="height:1em;"></div>
+        <div class="bloc_Large">
+          <h3>Commercial - Vente</h3>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Démarchage / Prospection
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 70%">100%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Suivi de clientèle
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 70%">100%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Négociation
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 56%">80%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Service après-vente
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 70%">100%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Gestion de stock
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width: 56%">80%</div>
+          </div>
+        </div>
+        <div style="height:1em;"></div>
+        <div class="bloc_Large">
+          <h3>Industrie - Logistique - Agroalimentaire</h3>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Conducteur de ligne / de machine
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width:70%">100%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Conduite de chariots élévateurs (caces 1/3)
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width:70%">100%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Préparations de commandes
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width:70%">100%</div>
+          </div>
+          <div class="progress colonne bg-light">
+            <div class="media col-md-3">
+              Manutention
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated lineHeight" role="progressbar" style="width:70%">100%</div>
+          </div>
+        </div>
+      <div style="height:1em;"></div>
+      </div>
     </div>
-
   </div>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  </body>
+</body>
 </html>

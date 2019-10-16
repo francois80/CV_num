@@ -10,8 +10,36 @@
 <body>
   <div class="container-fluid">
     <header>
-      <img src="assets/img/background.jpg" class="fond_header" alt="fond_header">
+      <h1>Développeur Web Junior</h1>
     </header>
+    <!-- bloc menu hamburger pour petit écran -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formations.html">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experiences.html">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competences.html">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="realisations.html">Réalisations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin bloc hamburger-->
     <!--block menu-->
     <div class="coord_menu">
       <input type="button" name="acueil" value="Accueil">
@@ -23,32 +51,39 @@
     </div>
     <!-- block coordonnees et menu côte à côte-->
     <div id="block_en_tete">
+      <!--bloc coordonnées petit ecran -->
+      <div class="card card-littleScreen mb-3" style="max-width: 17rem;">
+        <div class="card-body">
+          <h4>François GLAVIEUX</h4>
+          <p>glavieux.francois@orange.fr</p>
+        </div>
+      </div>
+      <!--fin bloc coordonnées petit écran -->
       <!-- block coordonnées -->
       <div id="coordonnees" class="col-sm-4 col-md-3">
         <div class="avatar">
         </div>
-        <div>
-          <p>
-            François GLAVIEUX<br><br>
+        <div class="text-coord">
+          <h4>François GLAVIEUX</h4>
             Conty (Somme,80)
+          <p>
+            glavieux.francois@orange.fr
           </p>
-          glavieux.francois@orange.fr
         </div>
       </div>
       <div id="textPresentation" class="col-sm-8 col-md-9">
-        <div>
-          <p>Accueil</p>
-        </div>
-
-          <h1>Présentation</h1>
-
-        <p>
-          Après 15 ans d'absence, je suis de retour dans le web...<br>
-          Et fort d'un nouvel apprentissage et de nouvelles expériences, me voici plus motivé que jamais pour atteindre un haut niveau.<br>
-          Doté d'un premier bts en informatique de gestion option multimédia services internet, je suis actuellement en formation intensive
-          pour remettre mes compétences à jour afin de passer un second bts développeur web et développeur web mobiles,
-          auprès du Centre de Formations La Manu, école des métiers du numérique, à Amiens(80).
-        </p>
+        <main>
+          <div class="bloc_Large">
+            <h1>Présentation</h1>
+              <p>
+                Après 15 ans d'absence, je suis de retour dans le web...<br>
+                Et fort d'un nouvel apprentissage et de nouvelles expériences, me voici plus motivé que jamais pour atteindre un haut niveau.<br>
+                Doté d'un premier bts en informatique de gestion option multimédia services internet, je suis actuellement en formation intensive
+                pour remettre mes compétences à jour afin de passer un second bts développeur web et développeur web mobiles,
+                auprès du Centre de Formations La Manu, école des métiers du numérique, à Amiens(80).
+              </p>
+          </div>
+        </main>
       </div>
     </div>
   </div>

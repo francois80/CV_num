@@ -1,10 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap');
 
-/*block du texte de présentation */
-#textPresentation{
-  display: inline-block;
-  align-items: flex-start;
-  width: 100%;
-  padding-top: 6%;
+*
+{
+	font-family: Poppins;
 }
 
 /*block regroupant les coordonnées et le texte de présentation */
@@ -13,6 +11,14 @@
   flex-wrap: wrap;
   padding-top: 5px;
   width: 100%;
+}
+
+/*block du texte de présentation */
+#textPresentation{
+  display: inline-block;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 6%;
 }
 
 /*coordonnées */
@@ -24,6 +30,8 @@
   height: 300px;
 }
 
+/* bloc carte large*/
+/* accueil*/
 .bloc_Large
 {
 	width: 100%;
@@ -34,10 +42,33 @@
 	-moz-box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
 	box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
 	border: 1px solid #dfdede;
-  margin-top: 50px;
+  padding-left: 4px;
 	border-radius: 15px;
 	overflow: hidden;
 }
+header
+{
+	background-image: url('../img/background.jpg');
+	height: 200px;
+	width: 100%;
+	background-position: bottom;
+	background-size: cover;
+	position: relative;
+	margin-top: -21px;
+}
+
+header h1
+{
+	font-family: Montserrat;
+	font-size: 5em;
+	text-align: center;
+	line-height: 200px;
+	color: white;
+	-webkit-text-stroke: 2px black;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+/*bloc page compétence*/
 
 .alignText{
   white-space: normal;
@@ -75,6 +106,30 @@
   background-repeat: no-repeat;
 }
 
+/*bloc texte coordonnées (sous la photo)*/
+.text-coord{
+  border: solid black 2px;
+  width: 17em;
+  -webkit-box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	border: 1px solid #dfdede;
+  padding-left: 8px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+/*style de la carte dans experiences*/
+.deco-card{
+  -webkit-box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	box-shadow: 7px 9px 5px -6px rgba(0,0,0,0.75);
+	border: 1px solid #dfdede;
+  padding-left: 8px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
 img {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -96,4 +151,71 @@ img:hover {
 }
 .lineHeight{
   height: 16px;
+}
+
+/*ecran téléphone
+suppression du header
+suppression du mnenu
+suppression fil ariane
+suppression du pavé coordonnées avec photo
+affichage pave coordonnées sans photo
+*/
+@media screen and (max-width: 500px)
+{
+  header{
+    display: none;
+  }
+
+  .coord_menu{
+    display: none;
+  }
+
+  #coordonnees{
+    display: none;
+  }
+
+  .filAriane{
+    display: none;
+  }
+
+  .card-littleScreen{
+    height: 5em;
+    justify-content: center;
+  }
+}
+/*autres tablettes
+suppression navbar
+titre dans image écrit plus petit
+suppression bloc coordonnées avec photo
+*/
+@media screen and (min-width: 500px) and (max-width: 900px)
+{
+  .navbar{
+    display: none;
+  }
+
+header h1
+	{
+		font-size: 2em;
+	}
+
+  #coordonnees{
+    display: none;
+  }
+}
+
+/*autres écran
+suppression menu coordonnées sans photo
+suppression barre de navigation
+*/
+@media screen and (min-width: 950px)
+{
+  .navbar{
+    display: none;
+  }
+
+  .card-littleScreen{
+    display: none;
+  }
+
 }
